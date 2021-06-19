@@ -20,6 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
+              "src/api",
               "src/assets"
             ],
             "styles": [
@@ -94,9 +95,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "demo1"
+  "defaultProject": "demo1",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
