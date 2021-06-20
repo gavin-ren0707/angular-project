@@ -9,6 +9,7 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
   keyword = 'demo1';
+  sum=0;
   data$: Observable<any[]> = {} as Observable<any[]>;
   constructor(private dataSvc: DataService) {}
 
